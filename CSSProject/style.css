@@ -1,39 +1,78 @@
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  max-height: -moz-max-content;
-  max-height: max-content;
-}
-body header {
-  background-color: gray;
-  margin-bottom: 1cm;
-}
-body header ul {
-  list-style: none;
-  display: flex;
-  gap: 2cm;
-  justify-content: center;
-  font-size: 23px;
-}
-body header a {
-  color: black;
-  text-decoration: none;
-}
-body main {
-  text-align: center;
-}
-body main h1 {
-  color: red;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-form {
+header {
+  background-color: rgb(87, 87, 191);
+  padding: 1rem;
+  text-align: center;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+main section {
+  margin-bottom: 2rem;
+}
+main #products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main #products h2 {
+  height: -moz-max-content;
+  height: max-content;
+}
+main #product1, main #product2, main #product3 {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main #product1 img, main #product2 img, main #product3 img {
+  max-width: 100%;
+  height: 13rem;
+}
+main #product1 button, main #product2 button, main #product3 button {
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #00ff00;
 }
 
 footer {
-  background-color: grey;
-  height: 5cm;
-  margin-top: 1cm;
-}/*# sourceMappingURL=style.css.map */
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+/*$primary-color: #3498db;
+$font-stack: 'Helvetica, sans-serif';
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+}
+  *//*# sourceMappingURL=styles.css.map */
